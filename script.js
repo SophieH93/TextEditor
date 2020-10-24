@@ -59,5 +59,11 @@ function makeUnderline(elem) {
  * HINT: Make sure to untoggle the active state for all other align buttons
  */
 function alignText(elem, alignType) {
-  // CODE GOES HERE
+  elem.classList.toggle('active');
+  document.getElementById('text-output').style.textAlign = alignType;
+  let buttonsList = document.getElementsByClassName('align');
+  for (let i = 0; i < buttonsList.length; i++) {
+    buttonsList[i].classList.remove('active');
+  }
+  elem.classList.add('active');
 }
