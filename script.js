@@ -10,8 +10,9 @@
  * Update the output text as a user types in the textarea
  * HINT: Use the onkeydown function inside HTML
  */
-function updateText(){
-  // CODE GOES HERE
+function updateText() {
+  let text = document.getElementById('text-input').value;
+  document.getElementById('text-output').innerText = text;
 }
 
 /**
@@ -21,14 +22,14 @@ function updateText(){
  * HINT: Use the classList property
  * HINT: Toggle .active class for the button
  */
-function makeBold(elem){
+function makeBold(elem) {
   //CODE GOES HERE
 }
 
 /**
  * Toggle the italic class for the output text
  */
-function makeItalic(elem){
+function makeItalic(elem) {
 }
 
 /**
@@ -37,8 +38,8 @@ function makeItalic(elem){
  * HINT: Use the classList property
  * HINT: Use contains, remove, and add functions
  */
-function makeUnderline(elem){
-    //CODE GOES HERE
+function makeUnderline(elem) {
+  //CODE GOES HERE
 }
 
 /**
@@ -47,6 +48,6 @@ function makeUnderline(elem){
  * HINT: Use the style property of the element
  * HINT: Make sure to untoggle the active state for all other align buttons
  */
-function alignText(elem, alignType){
+function alignText(elem, alignType) {
   // CODE GOES HERE
 }
